@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int cantmin;
+            Console.WriteLine("ingrese la cantidad de minutos : ");
+            cantmin = Convert.ToInt32(Console.ReadLine());
+            int horas = cantmin / 60;
+            int preciohoras = horas * 6000;
+            int min;
+            min = cantmin % 60;
+            int preciomin = min * 150;
+            double preciototal = preciomin + preciohoras;
+            double precioiva = preciototal * 2.1 ;
+
+            Console.WriteLine("el precio es " + precioiva);
+
+
+
+
+
+        }
+    }
+}
